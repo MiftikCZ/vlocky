@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins:ital,wght@0,300;0,400;1,400;1,600&display=swap');
+
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: #efeff5;
+}
+
+.receptTier {
+    color: #000;
+    width: 100vw;
+}
+
+header {
+    padding: 32px;
+    display: inline-flex;
+    width: 85%;
+    border-bottom: #0003 2px solid;
+    font-size: 23px;
+}
+.vsechnoTu {
+    color: #222;
+    font-size: 26px;
+}
+.header2 {
+    padding: 32px;
+    margin-top: 32px;
+    display: inline-block;
+    width: 85%;
+    border-top: #0003 2px solid;
+    font-size: 23px;
+}
+.title1 {
+    font-weight: 600;
+}
+
+.title2 {
+    margin-left: 32px;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+.a2 {
+    margin-right: 32px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: end;
+}
+
+
+
+main {
+    margin-top: 32px;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.containerList {
+    text-align: center;
+    width: 100%;
+}
+
+.containerJeden {
+    display: inline-block;
+    text-align: start;
+    padding: 24px;
+    background: #0001;
+    /*border: #0003 1px solid;*/
+    box-sizing: border-box;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 650px;
+    margin-bottom: 12px;
+    transition: 250ms;
+}
+
+
+.matText {    
+    margin-top: 8px;
+    height: 30px;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.matText .span2 {
+    margin-left: 3px;
+    display: inline-block;
+    text-align: center;
+}
+
+.title3 {
+    color: #000;
+    font-size: 26px;
+}
+
+.title4 {
+    font-weight: 300;
+    margin-top: 4px;
+    color: #222;
+    font-size: 22px;
+    margin-left: 18px;
+}
+.material-symbols-outlined {
+    user-select: none;
+    vertical-align: bottom
+}
+
+.title5 {
+    margin-top: 8px;
+    height: 30px;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #444;
+    vertical-align: middle;
+}
+.title5 .span2 {
+    margin-left: 3px;
+    display: inline-block;
+    text-align: center;
+}
+
+.title6 {
+    margin-top: 8px;
+    display: inline-flex;
+    color: #444;
+    vertical-align: middle;
+}
+
+.tt {
+    display: block;
+    
+}
+
+.titles {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+
+.titlesn {
+    width: 50%;
+}
+.titles2 {
+    text-align: end;
+}
+
+.barva2 {
+    color: firebrick;
+    font-style: italic;
+}
+
+b3 {
+    color: darkblue;
+    font-style: italic;
+}
+
+
+
+.receptBtn {
+
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    padding: 4px;
+    color: #444;
+    margin-top: 8px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    transition: 250ms;
+}
+
+.receptBtn .span2 {
+    margin-right: 8px;
+}
+
+.receptBtn:hover {
+    padding-left: 16px;
+    color: #222;
+}
+
+
+.load_next {
+    color: darkblue;
+    letter-spacing: 1px;
+    font-size: 24px;
+    display: inline-block;
+    margin: 25px;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+
+.load_next:hover {
+    padding-left: 12px;
+    padding-right: 12px;
+    letter-spacing: 4px;
+}
+
+
+.receptContainer {
+    margin-top: 12px;
+    border-top: #0003 2px solid;
+    display: block;
+}
+
+.receptRadek {
+    display: flex;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+
+tecka {
+    user-select: none;
+    display: inline-block;
+    margin-right: 6px;
+    height: 100%;
+    color: #000;
+}
+

@@ -1,0 +1,156 @@
+<hlavni>
+    <header class="hd">
+        <span class="a1" id="INP-title">
+            ?
+        </span>
+        <span class="a2">
+            <a href="./"><span class="podtitle">vlocky.ml</span></a>
+        </span>
+    </header>
+
+    <mains>
+        <h1>Postup:</h1>
+        <div id="INP-postup">
+            <span class="radek">
+                <tecka>-</tecka> Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, odit minus. Voluptatem, eveniet assumenda minima animi, aliquid ad facere dolorum odit fugit esse, consequatur iure voluptates officia quaerat quia eligendi?
+            </span>
+            <span class="radek">
+                <tecka>-</tecka> Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, odit minus. Voluptatem, eveniet assumenda minima animi, aliquid ad facere dolorum odit fugit esse, consequatur iure voluptates officia quaerat quia eligendi?
+            </span>
+            <span class="radek">
+                <tecka>-</tecka> Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, odit minus. Voluptatem, eveniet assumenda minima animi, aliquid ad facere dolorum odit fugit esse, consequatur iure voluptates officia quaerat quia eligendi?
+            </span>
+        </div>
+        <h1>Popisek:</h1>
+        <span class="radek2">
+                <span class="vlc"><span class="velce">čas:</span></span>
+                <div class="mlc">
+                    <span class="content" id="INP-cas">?</span>
+                </div>
+        </span>
+        <span class="radek2">
+            <span class="vlc"><span class="velce">popis:</span></span>
+            <div class="mlc">
+                <span class="content" id="INP-popis">
+                    ?
+                </span>
+            </div>
+        </span>
+        <span class="radek2">
+            <span class="vlc"><span class="velce">reference:</span></span>
+            <div class="mlc">
+                <span class="content" id="INP-reference">
+                    <b3>ve vývoji...</b3>
+                </span>
+            </div>
+        </span>
+        
+    </mains>
+    <spodni>
+        <button class="cudlik" onclick="swtch(0)">Vrátit se</button>
+    </spodni>
+</hlavni>
+
+<style>
+    hlavni {
+        text-align: center;
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        color: #222;
+        font-family: 'Poopins' sans-serif;
+    }
+    mains {        
+        display: inline-block;
+        text-align: start;
+        width: 85%;
+        margin-bottom: 141px;
+    }
+    spodni {
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        display: block;
+        background: #efeff5;
+    }
+    .cudlik {
+        font-family: 'Poopins' sans-serif;
+        letter-spacing: 2px;
+        cursor: pointer;
+        border: none;
+        color: white;
+        background: hsl(127, 61%, 45%);
+        max-width: 750px;
+        width: 85%;
+        border-radius: 40px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        margin: 40px;
+        font-size: 32px;
+        transition: 250ms;
+    }
+    .cudlik:hover {
+        letter-spacing: 5px;
+        background: hsl(127, 61%, 50%);
+    }
+    .podtitle {
+        letter-spacing: 1px;
+        font-family: 'Lato' sans-serif; 
+        font-weight: 400;
+        color: darkblue;
+    }
+    .velce {
+        display: inline-flex;
+        color: #222;
+        font-weight: 600;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .vlc  {
+        width: 180px;
+        display: inline-block;
+        text-align: end;
+    }
+    .mlc  {
+        width: 100%;
+        display: inline-block;
+        text-align: start;
+    }
+    .content {
+
+        display: inline-block;
+        text-align: start;
+        color: #000;
+        font-weight: 600;
+    }
+    .hd {
+        letter-spacing: 3px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .radek {
+
+    display: flex;
+    color: #222;
+    margin-bottom: 12px;
+    }
+
+    .radek2 {
+        justify-content: right;
+    display: flex;
+    text-align: right;
+    width: 100%;
+    color: #222;
+    margin-bottom: 12px;
+    }
+
+tecka {
+    user-select: none;
+    display: inline-block;
+    margin-right: 6px;
+    height: 100%;
+    color: darkblue;
+}
+
+</style>
