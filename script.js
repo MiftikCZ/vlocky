@@ -1,6 +1,3 @@
-let recepty = [
-
-]
 /**@type {HTMLElement} */
 let receptHtml = null
 let receptHtmlString = ""
@@ -9,11 +6,8 @@ let slide = 0
 
 
 window.onload = async () => {
-    recepty = await (await fetch("./recepty.json")).json()
     receptHtmlString = await (await fetch("./recept.html")).text()
     receptHtml = new DOMParser().parseFromString(receptHtmlString, 'text/html')
-    console.log(receptHtml)
-    openRecept(recepty[0])
     swtch(0)
     reloadRecepty()
 }
@@ -26,13 +20,10 @@ function reloadRecepty() {
     for (let i = 0; i < (slide + 1) * (showOnScreen); i++) {
         let add = ""
         if (!recepty[i]) {
-            add = `
-            <span class="matText">
-                    <span class="material-symbols-outlined">done</span>
-                    <span class="span2">to je vše</span>
-            </span>
-
-            `
+            add = `<span class="matText">
+                <span class="material-symbols-outlined">done</span>
+                <span class="span2">to je vše</span>
+            </span>`
             document.getElementById("toJeVse").innerHTML = add
         }
         document.getElementById("containerList").innerHTML += `
@@ -49,7 +40,7 @@ function reloadRecepty() {
             </div>
             
             <div class="titles2 titlesn">
-                <button class="receptBtn" onclick="openRecept(['${recepty[i].recept || "nic"}','${recepty[i].title || "nic"}','${recepty[i].description || "nic"}','${recepty[i].time || "nic"}'])">
+                <button class="receptBtn" onclick="openRecept('${encodeURI(JSON.stringify(recepty[i]))}')">
                     <span class="span2">recept</span>
                     <span class="material-symbols-outlined">menu_book</span>
                 </button>
@@ -68,25 +59,18 @@ function loadNext() {
     reloadRecepty()
 }
 
-function openRecept(receptik = ["?","?","?","?"]) {
-    
-    let recept = receptik[0] || "?"
-    let mrcpt = ""
-    recept.split(";").forEach(e => {
-
-        mrcpt+="<span class='radek'><tecka>-</tecka> "+e+"</span>"
-    })
-    for(let e in recept.split(";")) {
-    }
-    let title = receptik[1]
-    let description = receptik[2]
-    let cas = receptik[3] 
+function openRecept(receptik = null) {
+    receptik = JSON.parse(decodeURI(receptik) || "{}")
+    let recept = receptik?.recept.map(e => "<span class='radek'><span class='tecka'>-</span> "+e+"</span>").join("") || "?"
+    let title = receptik?.title
+    let description = receptik?.description
+    let cas = receptik?.time
 
 
 
     let el = receptHtml
     // INP - postup, reference, popis, cas
-    el.getElementById("INP-postup").innerHTML=mrcpt || "bez postupu..."
+    el.getElementById("INP-postup").innerHTML=recept || "bez postupu..."
     el.getElementById("INP-title").innerText=title || "bez názvu..."
     el.getElementById("INP-popis").innerText=description || "bez popisku..."
     el.getElementById("INP-cas").innerText=cas || "?"
