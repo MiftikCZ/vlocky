@@ -69,7 +69,7 @@ var recepty = [
             "1/2 lžičky skořicového curku",
             "1/2 lžičky javorového sirupu/medu",
             "ohřejeme v mikrovlnce na 1:20s",
-            "pak můžeme nakrájet na vrch zbytek banánu (1/2) na kolečka"
+            "9pak můžeme nakrájet na vrch zbytek banánu (1/2) na kolečka"
         ]
     },
     {
@@ -83,6 +83,20 @@ var recepty = [
             "1/2 kalíšku nízko tučného řeckého jogurtu",
             "trochu javorového sirupu nebo medu (0,5 - 1 lžičky)",
             "přidej k tomu chia semínka a nějaké míchané ovoce",
+            "nech to přes noc v ledničce",
+            "ráno se připrav na mňamózní studenou snídani! :)"
+        ]
+    },
+    {
+        "title": "S marmeládou",
+        "type": "overnight/cold",
+        "description": "Sladké studené vločky které vás po ránu zasytí",
+        "time": "5min",
+        "recept": [
+            "1/2 kalíšku vloček",
+            "1 kalíšek řeckého jogurtu",
+            "4 lžíce jahodové marmelády",
+            "* 2 lžíce chia semínek (volitelné)",
             "nech to přes noc v ledničce",
             "ráno se připrav na mňamózní studenou snídani! :)"
         ]
