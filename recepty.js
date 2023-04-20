@@ -2,6 +2,7 @@ var recepty = [
     {
         "title": "štrůdl",
         "description": "se skořicovým cukrem",
+        "type": "overnight/hot",
         "time": "3min",
         "recept": [
             "40g vloček",
@@ -14,6 +15,7 @@ var recepty = [
     {
         "title": "kakao + kokos",
         "description": "granko se strouhaným kokosem",
+        "type": "overnight/hot",
         "time": "2min",
         "recept": [
             "40g vloček",
@@ -28,6 +30,7 @@ var recepty = [
     {
         "title": "banán + nutella",
         "description": "nejlepší kobinace! :D",
+        "type": "overnight/hot",
         "time": "3min",
         "recept": [
             "40g vloček",
@@ -42,6 +45,7 @@ var recepty = [
     {
         "title": "domácí müsli",
         "description": "skořicovo banánové vločky orestované na pánvy",
+        "type": "pan/hot",
         "time": "8-10min",
         "recept": [
             "40g vloček",
@@ -56,6 +60,7 @@ var recepty = [
     {
         "title": "banán + skořice",
         "description": "skořicovo banánové vločky na rychlo",
+        "type": "now/hot",
         "time": "3-4min",
         "recept": [
             "40g vloček",
@@ -65,6 +70,21 @@ var recepty = [
             "1/2 lžičky javorového sirupu/medu",
             "ohřejeme v mikrovlnce na 1:20s",
             "pak můžeme nakrájet na vrch zbytek banánu (1/2) na kolečka"
+        ]
+    },
+    {
+        "title": "Zdravé ovocné overnight",
+        "type": "overnight/cold",
+        "description": "Ovocné vláčné vločky přes noc na skvělé ráno",
+        "time": "3min",
+        "recept": [
+            "1/2 kalíšku vloček",
+            "1/2 kalíšku mléka",
+            "1/2 kalíšku nízko tučného řeckého jogurtu",
+            "trochu javorového sirupu nebo medu (0,5 - 1 lžičky)",
+            "přidej k tomu chia semínka a nějaké míchané ovoce",
+            "nech to přes noc v ledničce",
+            "ráno se připrav na mňamózní studenou snídani! :)"
         ]
     }
 ]
