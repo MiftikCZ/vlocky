@@ -123,5 +123,24 @@ var recepty = [
             "1/2 kalíšku mléka + 1/2 kalíšku smetany (half and half)",
             "1 kalíšku čokoládových kuliček (chocolate chips)"
         ]
+    },
+    {
+        "title": "Arašídové máslo s džemem",
+        "type": "overnight/cold",
+        "source": "yummly.com",
+        "description": "Perfektní velká snídaně kterou si zamilujete!",
+        "time": "10min",
+        "recept": [
+            "1 / 1/2 hrnku mandlového mléka",
+            "1 hrnku vloček",
+            "1/4 hrnku arašídového másla",
+            "2 lžíce chia semínek",
+            "2 lžíce javorového syrupu",
+            "špetka soli",
+            "přes noc nech v lednici",
+            "před podáním jídla vmíchej 1 lžíci arašídového másla",
+            "přimíchej 1/4 hrnku plátků mandlí 1/4 hrnku jahodové marmelády",
+            "přidej nahoru 1/2 hrnku čerstvých plátků jahod",
+        ]
     }
 ]
