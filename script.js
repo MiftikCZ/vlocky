@@ -4,6 +4,14 @@ let receptHtmlString = ""
 let showOnScreen = 4
 let slide = 0
 
+const vlockyTypes = {
+    "overnight/cold": "přes noc / studené",
+    "overnight/hot": "přes noc + ohřáté",
+    "pan/hot": "na pánvičce",
+    "now/hot": "ohřáté",
+    "bake/any": "upečené"
+}
+
 
 window.onload = async () => {
     receptHtmlString = await (await fetch("./recept.html")).text()
@@ -63,6 +71,7 @@ function openRecept(receptik = null) {
     receptik = JSON.parse(decodeURI(receptik) || "{}")
     let recept = receptik?.recept.map(e => "<span class='radek'><span class='tecka'>-</span> "+e+"</span>").join("") || "?"
     let title = receptik?.title
+    let typ = vlockyTypes[receptik?.type] || receptik.type
     let description = receptik?.description
     let cas = receptik?.time
 
@@ -71,6 +80,7 @@ function openRecept(receptik = null) {
     let el = receptHtml
     // INP - postup, reference, popis, cas
     el.getElementById("INP-postup").innerHTML=recept || "bez postupu..."
+    el.getElementById("INP-type").innerHTML=typ || "?"
     el.getElementById("INP-title").innerText=title || "bez názvu..."
     el.getElementById("INP-popis").innerText=description || "bez popisku..."
     el.getElementById("INP-cas").innerText=cas || "?"
@@ -78,7 +88,7 @@ function openRecept(receptik = null) {
 
     document.getElementById("receptTier").innerHTML = ""
     document.getElementById("receptTier").insertAdjacentHTML("beforeend",el.firstChild.innerHTML)
-    
+    // document.getElementById("receptTier").appendChild(el.firstChild)
 
     swtch(1)
 }
